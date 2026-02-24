@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bovg4ligwys5a"]
+
+[ext_resource type="Texture2D" uid="uid://bxue6i03302oh" path="res://Assets/Player projectiles.png" id="1_f8cdk"]
+[ext_resource type="Script" uid="uid://ceqjy2ws31hdn" path="res://Scripts/projectile.gd" id="1_yr2qt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qxf0c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dgwo2"]
+atlas = ExtResource("1_f8cdk")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxmqc"]
+atlas = ExtResource("1_f8cdk")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2xblw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dgwo2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxmqc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Slash" type="Area2D" unique_id=689199998 groups=["Projectile"]]
+script = ExtResource("1_yr2qt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=874106959]
+shape = SubResource("CircleShape2D_qxf0c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=620727512]
+sprite_frames = SubResource("SpriteFrames_2xblw")

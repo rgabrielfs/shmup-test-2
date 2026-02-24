@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://b5ttiv4evvr02"]
+
+[ext_resource type="Texture2D" uid="uid://bydfetejicjah" path="res://Assets/Skybox Forest.png" id="1_a02cp"]
+[ext_resource type="Script" uid="uid://cofvxtpnec3xh" path="res://Scripts/background.gd" id="1_go701"]
+[ext_resource type="PackedScene" uid="uid://ccq6ppj3qaykb" path="res://Scenes/player.tscn" id="3_5a7ea"]
+[ext_resource type="PackedScene" uid="uid://d0kkufvwe6okm" path="res://Scenes/skull.tscn" id="4_8j60k"]
+
+[sub_resource type="GDScript" id="GDScript_5a7ea"]
+
+[node name="World" type="Node2D" unique_id=380676829]
+script = ExtResource("1_go701")
+
+[node name="Background" type="Node2D" parent="." unique_id=1218373707]
+
+[node name="TextureRect" type="TextureRect" parent="Background" unique_id=1341126277]
+offset_right = 3823.3335
+offset_bottom = 240.0
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_a02cp")
+stretch_mode = 1
+script = SubResource("GDScript_5a7ea")
+
+[node name="Player" parent="." unique_id=900902109 instance=ExtResource("3_5a7ea")]
+position = Vector2(96, 239)
+speed = 300
+
+[node name="Skull" parent="." unique_id=1758904786 instance=ExtResource("4_8j60k")]
+position = Vector2(496, 92)
+
+[node name="Skull2" parent="." unique_id=703398776 instance=ExtResource("4_8j60k")]
+position = Vector2(493, 226)
+
+[node name="Skull3" parent="." unique_id=1820235803 instance=ExtResource("4_8j60k")]
+position = Vector2(627, 162)
+
+[node name="Skull4" parent="." unique_id=1990487554 instance=ExtResource("4_8j60k")]
+position = Vector2(732, 86)
+
+[node name="Skull5" parent="." unique_id=307206090 instance=ExtResource("4_8j60k")]
+position = Vector2(732, 242)
+
+[node name="Skull6" parent="." unique_id=9427278 instance=ExtResource("4_8j60k")]
+position = Vector2(856, 314)
+
+[node name="Skull7" parent="." unique_id=344957729 instance=ExtResource("4_8j60k")]
+position = Vector2(857, 57)
+
+[node name="Skull8" parent="." unique_id=32548023 instance=ExtResource("4_8j60k")]
+position = Vector2(857, 179)
+
+[node name="Skull9" parent="." unique_id=1726979339 instance=ExtResource("4_8j60k")]
+position = Vector2(970, 96)
+
+[node name="Skull10" parent="." unique_id=614161565 instance=ExtResource("4_8j60k")]
+position = Vector2(985, 233)
+
+[node name="Skull11" parent="." unique_id=1489738759 instance=ExtResource("4_8j60k")]
+position = Vector2(1113, 146)
+
+[node name="Skull12" parent="." unique_id=128768469 instance=ExtResource("4_8j60k")]
+position = Vector2(1420, 141)
+
+[node name="Skull13" parent="." unique_id=350776973 instance=ExtResource("4_8j60k")]
+position = Vector2(1545, 89)
+
+[node name="Skull14" parent="." unique_id=1091552938 instance=ExtResource("4_8j60k")]
+position = Vector2(1540, 221)
+
+[node name="Skull15" parent="." unique_id=1794793464 instance=ExtResource("4_8j60k")]
+position = Vector2(1667, 161)
+
+[node name="Skull20" parent="." unique_id=469544482 instance=ExtResource("4_8j60k")]
+position = Vector2(1957, 152)
+
+[node name="Skull16" parent="." unique_id=966197017 instance=ExtResource("4_8j60k")]
+position = Vector2(1826, 86)
+
+[node name="Skull17" parent="." unique_id=722208311 instance=ExtResource("4_8j60k")]
+position = Vector2(1826, 200)
+
+[node name="Skull18" parent="." unique_id=2098932235 instance=ExtResource("4_8j60k")]
+position = Vector2(1666, 283)
+
+[node name="Skull19" parent="." unique_id=1194416705 instance=ExtResource("4_8j60k")]
+position = Vector2(1666, 47)
