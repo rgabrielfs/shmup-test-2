@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bc27agyds3wxr"]
 
-[ext_resource type="Script" uid="uid://cofvxtpnec3xh" path="res://Scripts/background.gd" id="1_8fptb"]
+[ext_resource type="Script" uid="uid://ulwu0ye6wjo3" path="res://Scripts/background2.gd" id="1_8fptb"]
 [ext_resource type="Texture2D" uid="uid://c13c5bujuufkf" path="res://Assets/Skybox Castle outside.png" id="2_o0rqk"]
 [ext_resource type="PackedScene" uid="uid://ccq6ppj3qaykb" path="res://Scenes/player.tscn" id="3_jeuw4"]
 [ext_resource type="PackedScene" uid="uid://d0kkufvwe6okm" path="res://Scenes/skull.tscn" id="4_exon5"]
